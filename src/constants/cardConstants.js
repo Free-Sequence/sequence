@@ -1,0 +1,3 @@
+export const SELECT_CARD = 'SELECT_CARD';
+export const GET_ALL_PRODUCT = 'GET_ALL_PRODUCT';
+export const SET_ALL_PRODUCTS = 'SET_ALL_PRODUCTS';
