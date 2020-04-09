@@ -1,5 +1,5 @@
 import { SELECT_CARD } from '../constants/cardConstants';
-import { cardsArray } from '../cards/cardsArray';
+import cardsArray from '../cards/cardsArray';
 
 const initialState = {
   allCards: cardsArray,

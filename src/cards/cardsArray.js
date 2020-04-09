@@ -1,4 +1,4 @@
-export const cardsArray = [
+const cardsArray = [
   {
     id: 'Top_right_open',
     name: 'Top Left Open',
@@ -500,3 +500,5 @@ export const cardsArray = [
     image: 'cards/dimonds/Red_back.jpg',
   },
 ];
+
+export default cardsArray;

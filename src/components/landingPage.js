@@ -1,6 +1,6 @@
 import React from 'react';
-import history from '../store/history';
 import { Button, Row, Col } from 'react-bootstrap';
+import history from '../store/history';
 import JoinGameModal from './joinGameModal';
 
 export default function LandingPage() {

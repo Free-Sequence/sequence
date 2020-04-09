@@ -7,20 +7,18 @@ function BoardContainer(props) {
   return (
     <Container>
       <Row md={12}>
-        {props.cards.map((card) => {
-          return (
-            <Col>
-              <button onClick={() => props.selectCard(card)}>
-                <img
-                  src={require(`../${card.image}`)}
-                  alt={card.name}
-                  height="100px"
-                  width="60px"
-                ></img>
-              </button>
-            </Col>
-          );
-        })}
+        {props.cards.map((card) => (
+          <Col>
+            <button onClick={() => props.selectCard(card)}>
+              <img
+                src={require(`../${card.image}`)}
+                alt={card.name}
+                height="100px"
+                width="60px"
+              />
+            </button>
+          </Col>
+        ))}
       </Row>
     </Container>
   );
