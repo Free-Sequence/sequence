@@ -11,7 +11,7 @@ function BoardContainer(props) {
           <Col>
             <button onClick={() => props.selectCard(card)}>
               <img
-                src={require(`../${card.image}`)}
+                src={card.image}
                 alt={card.name}
                 height="100px"
                 width="60px"

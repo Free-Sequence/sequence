@@ -1,8 +1,7 @@
-import { SELECT_CARD } from '../constants/cardConstants';
-import cardsArray from '../cards/cardsArray';
+import { SELECT_CARD, CARDS } from '../constants/cardConstants';
 
 const initialState = {
-  allCards: cardsArray,
+  allCards: CARDS,
   clickedCard: null,
 };
 
