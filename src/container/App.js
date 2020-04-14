@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
 import history from '../store/history';
 
-import JoinGameModal from '../components/Modal/joinGameModal';
+import JoinGameModal from '../components/Modal/JoinGameModal';
 import './App.scss';
 
 // Further refacroting needed in this file, when we add more features and add server connections.

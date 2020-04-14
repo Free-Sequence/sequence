@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-export default function joinGameModal(props) {
+export default function JoinGameModal(props) {
   return (
     <Modal
       {...props}
@@ -34,3 +35,7 @@ export default function joinGameModal(props) {
     </Modal>
   );
 }
+
+JoinGameModal.propTypes = {
+  onHide: PropTypes.func.isRequired,
+};

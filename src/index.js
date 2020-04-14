@@ -9,7 +9,7 @@ import './index.scss';
 
 import history from './store/history';
 import App from './container/App';
-import BoardContainer from './components/boardContainer';
+import BoardContainer from './components/BoardContainer';
 
 const rootstore = configureStore();
 

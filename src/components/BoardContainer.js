@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'react-bootstrap';
 import { selectCard } from '../actions/cardAction';
 
@@ -9,7 +10,7 @@ function BoardContainer(props) {
       <Row md={12}>
         {props.cards.map((card) => (
           <Col>
-            <button onClick={() => props.selectCard(card)}>
+            <button type="button" onClick={() => props.selectCard(card)}>
               <img
                 src={card.image}
                 alt={card.name}
@@ -23,6 +24,11 @@ function BoardContainer(props) {
     </Container>
   );
 }
+
+BoardContainer.propTypes = {
+  cards: PropTypes.array.isRequired,
+  selectCard: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = (state) => ({
   cards: state.sequence.allCards,
